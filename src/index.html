@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BAY WALLET</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <script type="module" src="./js/main.js"></script>
+
+    <meta name="theme-color" content="#31d53d" />
+
+
+
+  </head>
+  <body class ="bg-image" style ="background-image: url(assets/imgs/polygonal-bg2.jpg);">
+
+    <!--Navbar--> 
+    <nav class="navbar navbar-info fixed-top" style="background-color: rgb(67, 165, 246);">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+        <!--Logo Img-->
+        <img src="assets/imgs/navbarlogo.png" alt="" class="d-inline-block align-middle mr-2" width="50" height="50">
+        <!--Logo Text-->
+        <span class="text-uppercase fw-bold">Bay Wallet</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-info" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chart.html">Chart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar-->
+
+
+    <br />
+
+    <div class="container mt-3 p-5 bg-image" style="background-image: url(assets/imgs/polygonal-bg3.jpg);">
+      <div class="row">
+        <div class="col">
+          <h1 style="font-size: 40px;">WELCOME TO BAY WALLET</h1>
+          <p style="font-size: 25px;">BAY WALLET is created to assist users in successfully managing their money. Whether your aim is to pay off debt, save for a major purchase, or just have more control over your spending, BAY WALLET offers the information and resources you need to reach your financial objectives.</p>
+
+          <a href="budget.html"><button class="btn btn-success" type="button">Click here to Begin Budgetting</button></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container mt-3 p-5">
+      <div class="row">
+        <div class="col">
+          <h2 class="fw-bold text-center" style="color: rgb(155, 205, 219);">Functionality</h2>
+          <br>
+          <p class="fw-bolder text-center" style="color: rgb(155, 205, 219);" >BAY WALLET's features can be customized to whatever budgetting plan you want, things like <span style="font-size: 17px;">Budget Creation</span>, <span style="font-size: 17px;">Goal Settings</span>, <span style="font-size: 17px;">Income and Debt Tracking</span>, these options allow you to organize aspects of everything worth spending or not. In the end, what matters is that functionality is key, and we have given you the entire toolset to do so.</p>
+        </div>
+        <div class="col">
+          <h2 class="fw-bold text-center" style="color: rgb(122, 230, 240);">Zero Integration</h2>
+          <br>
+          <p class="fw-bolder text-center" style="color: rgb(122, 230, 240);">BAY WALLET doesn't have financial integration, While some might think that this function is necessary, it is only through your choice to find something that allows you to connect with financial institutions, we provide a free system that can plan how to spend money for you, and hiring professionals can be a bit taxing on your wallet.</p>
+        </div>
+        <div class="col">
+          <h2 class="fw-bold text-center" style="color: rgb(122, 230, 240);">Analysis</h2>
+          <br>
+          <p class="fw-bolder text-center" style="color: rgb(122, 230, 240);">BAY WALLET is also able to give you <span style="font-size: 17px;">Financial Insight</span>, giving you detailed visuals of your financial health, you can also be able to compare previous budget plans through the <span style="font-size: 17px;">Calendar</span>, as a reference point, you can also <span style="font-size: 17px;">Export and Backup</span> your plans to prevent data loss from corruption or device damages. Our simple system allows these functions to work, all that's needed is your input.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head> 
+<body> 
+  
+    <nav class="navbar navbar-info fixed-top" style="background-color: rgb(67, 165, 246);">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-info" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <br>
+      <br>
+      <br>
+
+<canvas id="myChart" width="100" height="200"></canvas> 
+<script type="text/javascript"> 
+  
+var ctx = document.getElementById("myChart"); 
+var myChart = new Chart(ctx, { 
+  type: 'bar', 
+  data: { 
+    labels: ["Food", "Bathware" , "Traffic Fare" , "Load", "Printing", "Project Expenses"], 
+    datasets: [ 
+      { label: '# of Cash Spent Weekly', 
+        data: [350,30,280,105,60,200], 
+        backgroundColor :['rgba(255, 99, 132, 0.2)', 
+                'rgba(54, 162, 235, 0.2)', 
+                'rgba(255, 206, 86, 0.2)', 
+                'rgba(75, 192, 192, 0.2)', 
+                'rgba(153, 102, 255, 0.2)', 
+                'rgba(255, 159, 64, 0.2)' 
+], 
+  
+borderColor: [ 
+                'rgba(255,99,132,1)', 
+                'rgba(54, 162, 235, 1)', 
+                'rgba(255, 206, 86, 1)', 
+                'rgba(75, 192, 192, 1)', 
+                'rgba(153, 102, 255, 1)', 
+                'rgba(255, 159, 64, 1)' 
+            ], 
+borderWidth : 1 
+      } 
+    ] 
+  }, 
+  options: { 
+        scales: { 
+            yAxes: [{ 
+                ticks: { 
+                    beginAtZero:true 
+                } 
+            }] 
+        } 
+    } 
+}); 
+  
+    </script> 
+</body> 
+</html> 
